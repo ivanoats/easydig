@@ -1,0 +1,13 @@
+!!! 5
+%head
+  %title EasyDig
+%body
+  %header
+    %h1 EasyDig
+    %h2 The easy way to dig for domain name configuration info
+  #content
+    %form{:action=>'/dig', :method => "get"}
+      %fieldset{:style => 'border:none'}
+        %label{:for => "domain_name"} Domain name:
+        %input{:type => "text" , :name => "domain_name"}
+        %input{:type => "submit", :value => "Dig!"}
